@@ -1,10 +1,10 @@
-import java.io.*;
-import java.math.*;
-import java.text.*;
-import java.util.*;
-import java.util.regex.*;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Scanner;
 
-public class Solution {
+public class Simple_Array_Sum {
 
     /*
      * Complete the simpleArraySum function below.

@@ -1,46 +1,28 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+import java.util.Scanner;
 
-public class Solution {
+public class Staircase {
 
-    // Complete the aVeryBigSum function below.
-    static long aVeryBigSum(long[] ar) {
-        BigDecimal bigDecimal = new BigDecimal(0);
-        for(int i = 0; i < ar.length;i++){
-            bigDecimal=bigDecimal.add(new BigDecimal(ar[i]));
+    // Complete the staircase function below.
+    static void staircase(int n) {
+        for (int z = 1; z <= n; z++) {
+            StringBuilder sb = new StringBuilder();
+            for (int i = (n - 1) - z; i >= 0; i--) {
+                sb.append(' ');
+            }
+            for (int k = z; k > 0; k--) {
+                sb.append('#');
+            }
+            System.out.println(sb.toString());
         }
-        return bigDecimal.toBigInteger().longValue();
     }
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    public static void main(String[] args) throws IOException {
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-
-        int arCount = scanner.nextInt();
+    public static void main(String[] args) {
+        int n = scanner.nextInt();
         scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
 
-        long[] ar = new long[arCount];
-
-        String[] arItems = scanner.nextLine().split(" ");
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-
-        for (int i = 0; i < arCount; i++) {
-            long arItem = Long.parseLong(arItems[i]);
-            ar[i] = arItem;
-        }
-
-        long result = aVeryBigSum(ar);
-
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
-
-        bufferedWriter.close();
+        staircase(n);
 
         scanner.close();
     }
