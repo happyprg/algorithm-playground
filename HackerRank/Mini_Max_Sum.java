@@ -7,26 +7,20 @@ public class Mini_Max_Sum {
     // Complete the miniMaxSum function below.
     static void miniMaxSum(int[] arr) {
 
-        int cntOfSumElements = 4;
+        long maxValue = arr[0];
+        long minValue = arr[0];
+        long sumValue = 0L;
         for (int i = 0; i < arr.length; i++) {
-            for (int j = 0; j < arr.length - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
+            if (maxValue < arr[i]) {
+                maxValue = arr[i];
             }
+            if (minValue > arr[i]) {
+                minValue = arr[i];
+            }
+            sumValue += arr[i];
         }
 
-        long sumOfMinToCntOfSumElements = 0;
-        for (int i = 0; i < cntOfSumElements; i++) {
-            sumOfMinToCntOfSumElements += arr[i];
-        }
-        long sumOfMaxToCntOfSumElements = 0;
-        for (int i = arr.length - 1; i >= arr.length - cntOfSumElements; i--) {
-            sumOfMaxToCntOfSumElements += arr[i];
-        }
-        System.out.println(sumOfMinToCntOfSumElements + " " + sumOfMaxToCntOfSumElements);
+        System.out.println((sumValue - maxValue) + " " + (sumValue - minValue));
     }
 
     public static void main(String[] args) {
