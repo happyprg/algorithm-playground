@@ -1,3 +1,5 @@
+package algorithm;
+
 import java.util.Scanner;
 
 public class Mini_Max_Sum_Dynamic_Arr {

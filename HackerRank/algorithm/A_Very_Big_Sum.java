@@ -1,3 +1,5 @@
+package algorithm;
+
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -9,7 +11,7 @@ public class A_Very_Big_Sum {
     // Complete the aVeryBigSum function below.
     static long aVeryBigSum(long[] ar) {
         BigDecimal bigDecimal = new BigDecimal(0);
-        for(int i = 0; i < ar.length;i++){
+        for(int i = 0; i < ar.length; i++){
             bigDecimal=bigDecimal.add(new BigDecimal(ar[i]));
         }
         return bigDecimal.toBigInteger().longValue();

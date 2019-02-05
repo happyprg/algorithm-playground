@@ -1,3 +1,5 @@
+package algorithm;
+
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -8,7 +10,7 @@ public class timeConversion {
     private static final Scanner scan = new Scanner(System.in);
 
     /*
-     * Complete the timeConversion function below.
+     * Complete the algorithm.timeConversion function below.
      */
     static String timeConversion(String s) {
         int hh = Integer.parseInt(s.substring(0, 2));

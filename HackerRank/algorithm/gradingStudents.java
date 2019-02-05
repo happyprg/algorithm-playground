@@ -1,3 +1,5 @@
+package algorithm;
+
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
@@ -8,7 +10,7 @@ public class gradingStudents {
     private static final Scanner scan = new Scanner(System.in);
 
     /*
-     * Complete the gradingStudents function below.
+     * Complete the algorithm.gradingStudents function below.
      */
     static int[] gradingStudents(int[] grades) {
         /*

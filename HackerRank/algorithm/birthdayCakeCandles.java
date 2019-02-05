@@ -1,16 +1,15 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.regex.*;
+package algorithm;
+
+import java.io.BufferedWriter;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.util.Scanner;
 
 public class birthdayCakeCandles {
 
     private static final Scanner scanner = new Scanner(System.in);
 
-    // Complete the birthdayCakeCandles function below.
+    // Complete the algorithm.birthdayCakeCandles function below.
     static int birthdayCakeCandles(int[] ar) {
         int[][] maxValue = new int[1][2];
 
