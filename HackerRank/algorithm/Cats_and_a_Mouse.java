@@ -12,11 +12,8 @@ public class Cats_and_a_Mouse {
     // Complete the catAndMouse function below.
     static String catAndMouse(int x, int y, int z) {
 
-        int distanceCatAAndMouseC = z > x ? z - x : x - z;
-        int distanceCatBAndMouseC = z > y ? z - y : y - z;
-
-        distanceCatAAndMouseC = Math.abs(distanceCatAAndMouseC);
-        distanceCatBAndMouseC = Math.abs(distanceCatBAndMouseC);
+        int distanceCatAAndMouseC = Math.abs(z - x);
+        int distanceCatBAndMouseC = Math.abs(z - y);
 
         if (distanceCatAAndMouseC > distanceCatBAndMouseC) {
             return "Cat B";
