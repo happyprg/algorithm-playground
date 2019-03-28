@@ -68,7 +68,7 @@
     <inspection_tool class="DuplicateBooleanBranch" enabled="true" level="WARNING" enabled_by_default="true" />
     <inspection_tool class="Duplicates" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <Java>
-        <minSize>56</minSize>
+        <minSize>113</minSize>
         <isEnabled>true</isEnabled>
       </Java>
     </inspection_tool>
