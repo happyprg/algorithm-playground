@@ -9,7 +9,6 @@ public class QuickSort {
         System.out.println("arr = " + Arrays.toString(arr));
         quickSort(arr, 0, arr.length - 1);
         System.out.println("arr = " + Arrays.toString(arr));
-
     }
 
     private static void quickSort(int[] arr, int start, int end) {
