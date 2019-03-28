@@ -4,16 +4,12 @@ public class QuickSort {
 
     public static void main(String[] args) {
         int[] arr = {
-                3, 2, 4, 1, 0, 5, 7, 6, 8, 9
+                3, 2, 6, 1, 5, 7, 4, 8, 9, 0
         };
         System.out.println("arr = " + Arrays.toString(arr));
-        quickSort(arr);
+        quickSort(arr, 0, arr.length - 1);
         System.out.println("arr = " + Arrays.toString(arr));
 
-    }
-
-    public static void quickSort(int[] arr) {
-        quickSort(arr, 0, arr.length - 1);
     }
 
     private static void quickSort(int[] arr, int start, int end) {
