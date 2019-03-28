@@ -1,9 +1,9 @@
 package algorithm;// IMPORT LIBRARY PACKAGES NEEDED BY YOUR PROGRAM
 
-import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.List;
+
+import org.junit.jupiter.api.Test;
 
 // SOME CLASSES WITHIN A PACKAGE MAY BE RESTRICTED
 // DEFINE ANY CLASS AND METHOD NEEDED
@@ -15,7 +15,7 @@ public class Cell_house {
     public void cellCompete() {
 
 //        int[] states = new int[]{1, 0, 0, 0, 0, 1, 0, 0};
-        int[] states = new int[]{1, 1, 1, 0, 1, 1, 1, 1};
+        int[] states = { 1, 1, 1, 0, 1, 1, 1, 1 };
         int days = 2;
         int leftEndCell = 0;
         int rightEndCell = 0;

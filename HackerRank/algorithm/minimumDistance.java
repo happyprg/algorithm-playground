@@ -1,10 +1,10 @@
 package algorithm;// IMPORT LIBRARY PACKAGES NEEDED BY YOUR PROGRAM
 
-import org.junit.Test;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+
+import org.junit.jupiter.api.Test;
 
 // SOME CLASSES WITHIN A PACKAGE MAY BE RESTRICTED
 // DEFINE ANY CLASS AND METHOD NEEDED
@@ -12,12 +12,10 @@ import java.util.List;
 public class minimumDistance {
     // METHOD SIGNATURE BEGINS, THIS METHOD IS REQUIRED
 
-
     int minimumDistance(int numRows, int numColumns, List<List<Integer>> area) {
         // WRITE YOUR CODE HERE
         return -1;
     }
-
 
     @Test
     public void findLocation() {
