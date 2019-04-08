@@ -18,8 +18,13 @@ public class Solution {
                 }
             }
             long minus = Long.parseLong(new String(chars).replaceFirst("0", ""));
+            long getFirstPosition = targetValue % 10;
             if (minus == 0L) {
-                minus = 1;
+                if (getFirstPosition == 5) {
+                    minus = 2;
+                } else {
+                    minus = 1;
+                }
             }
             long result = targetValue - minus;
             System.out.println("Case #" + readCount + ": " + result + " " + minus);
