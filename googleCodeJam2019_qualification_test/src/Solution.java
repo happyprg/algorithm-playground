@@ -17,7 +17,11 @@ public class Solution {
                     chars[i] = '0';
                 }
             }
-            long minus = Long.parseLong(new String(chars).replaceFirst("0", ""));
+            String maskingTexts = new String(chars);
+            if (maskingTexts.length() > 1) {
+                maskingTexts = maskingTexts.replaceFirst("0", "");
+            }
+            long minus = Long.parseLong(maskingTexts);
             long getFirstPosition = targetValue % 10;
             if (minus == 0L) {
                 if (getFirstPosition == 5) {
